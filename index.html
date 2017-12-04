@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<!-- 
+<!--
    Name: Jake Adamson, Robert Cucchiara, David DaCosta
-   Email: david_dacosta@student.uml.edu                                                                     
-   Computer Science Department Student, UMass Lowell                                                        
-   Comp.4610, GUI Programming I                                                                             
-   File:                                    
-   Created: 30-Nov-2017                                                                   
-   Last updated by DD: 30-Nov-2017, 08:30pm                          
+   Email: david_dacosta@student.uml.edu
+   Computer Science Department Student, UMass Lowell
+   Comp.4610, GUI Programming I
+   File:
+   Created: 30-Nov-2017
+   Last updated by DD: 30-Nov-2017, 08:30pm
   -->
 
-<html>
+<html ng-app>
   <head>
     <title>Final</title>
       <!--    FITS TO DEVICE WIDTH-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+
       <!-- JQUERY CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
       <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
+      <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.js'></script>
 
       <!-- Theme CSS -->
-      <link href="./css/final.css" rel="stylesheet">  
+      <link href="./css/final.css" rel="stylesheet">
       <!-- Import JS -->
       <script type="text/javascript" src="./js/final.js"></script>
   </head>
-  
+
   <!-- Body of the site-->
-  <body>
+  <body ng-app="">
     <div class="intro">
       <h1>Portfolio Mate</h1>
+      <script>
+        function Clock($scope) {
+          $scope.currentTime = new Date();
+        }
+      </script>
+
+      <p ng-controller='Clock'>
+  			The current time is {{currentTime | date:'h:mm:ss a'}}.
+  		<p>
     </div>
 
   </body>
