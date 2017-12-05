@@ -1,2 +1,2 @@
-# https://jakerobdave.github.io/portfolio-mate.github.io/
+# https://jakerobdave.github.io/portfolio-mate/
 Final Project Gui
