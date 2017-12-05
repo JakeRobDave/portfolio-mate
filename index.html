@@ -10,7 +10,7 @@
   -->
 
 <html>
-  <head>
+  <head ng-app>
     <title>Final</title>
       <!--    FITS TO DEVICE WIDTH-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,10 +28,18 @@
   </head>
 
   <!-- Body of the site-->
-  <body>
+  <body ng-app="">
     <div class="intro">
       <h1>Portfolio Mate</h1>
-
+   <script>
+         function Clock($scope) {
+           $scope.currentTime = new Date();
+         }
+       </script>
+ 
+       <p ng-controller='Clock'>
+   			The current time is {{currentTime | date:'h:mm:ss a'}}.
+   		<p>
     </div>
 
   </body>
