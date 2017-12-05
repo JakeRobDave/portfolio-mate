@@ -9,29 +9,43 @@
    Last updated by DD: 30-Nov-2017, 08:30pm
   -->
 
-<html>
+<html lang="en">
   <head>
     <title>Final</title>
       <!--    FITS TO DEVICE WIDTH-->
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- JQUERY CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
-      <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
-      <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.js'></script>
+
 
       <!-- Theme CSS -->
-      <link href="./css/final.css" rel="stylesheet">
-      <!-- Import JS -->
-      <script type="text/javascript" src="./js/final.js"></script>
+      <link href="./css/style.css" rel="stylesheet">
+
   </head>
 
   <!-- Body of the site-->
   <body>
-    <div class="intro">
+    <div class="header" id="header">
       <h1>Portfolio Mate</h1>
     </div>
+
+    <input id="f" type="file" />
+    <img id="i" />
+
+    <div class="image" id="image"></div>
+<div class="image" id="image"></div>
+    <div class="footer" id="footer">
+      <p>this is the footer</p>
+    </div>
+
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Import JS -->
+    <script type="text/javascript" src="./js/imgLogic.js"></script>
 
   </body>
 </html>
