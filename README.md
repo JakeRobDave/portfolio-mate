@@ -1,7 +1,7 @@
 # https://jakerobdave.github.io/portfolio-mate/
 Final Project Gui
 
-#Portfolio Mate Manual 
+# Portfolio Mate Manual 
 
 Installation/Initialization instructions.
 Portfolio Mate doesn’t need to be installed. Access the web app on any browser with internet at the base-page: http://weblab.cs.uml.edu/~ddacosta/final/main.html. 
@@ -10,7 +10,7 @@ Instructions
 To use the website, the user must either sign in or check in as visitor at the main page: http://weblab.cs.uml.edu/~ddacosta/final/main.html, 
 
 
-#(1) Main Page 
+# (1) Main Page 
 On the Main Page the only interactable items are the two buttons; Master & Visitor. 
 
 OnClick  Visitor:     
@@ -20,14 +20,14 @@ OnClick Master Button:
 As this project was built for a single user to control, Master is where the photographer client will log in. After clicking the button, a modal dialogue menu will come up. Currently. to use the software the user must type in “annFisher” for the username and “3dog” for the password because they’re hardcoded. The user can submit by pressing the enter key (not 100% reliable) or pressing submit, upon where they will be brought to the Editor Page for portfolio control.
 
 
-#(2) Landing Page
+# (2) Landing Page
     In the Landing Page, visitors can see scroll through the Portfolio scrollview and click on pages to expand modals of them that display them in higher scale with an image title heading and buttons for the visitor to interact with, namely:
 Tweet: An official Twitter API button will open up a tweet web intent for the visitor to share the portfolio. 
 Share: An official Facebook Developer Tools button will open up a Facebook post window for the visitor to share the portfolio. 
 Download: The download button downloads the image on display in the modal. 
 
 
-#(3) Editor Page: 
+# (3) Editor Page: 
 From inside the editor page, the user can click on any of the menu Sidebar options or the Images in the body area. 
 
 Editor Page Sidebar:
@@ -47,7 +47,7 @@ Edit Picture: An edit Picture button sends the user to the Photo Editing page (4
 Delete: As a security feature, the web app requires the photographer to drag and drop th file they’re trying to delete before pressing the Delete button here. 
 
 
-#(4) Picture Edit Page
+# (4) Picture Edit Page
     On clicking the Edit Picture button from an image click modal; the user is brought to the Picture Edit page. On the Picture Edit page the user can change the Brightness, Contrast, RGB, Grayscale, Cropping, and Resolution of the image they chose to edit at the Editor page, with various sliders, buttons, and forms.
 The Left column is Rotation, Cropping, and Resizing. 
 The Center is the Image Canvas to be adjusted, sent from the Editor Page. Also:
