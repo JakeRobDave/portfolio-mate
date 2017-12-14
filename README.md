@@ -52,8 +52,8 @@ On an image click, the user will have a few buttons and inputs available to them
 On clicking the Edit Picture button from an image click modal; the user is brought to the Picture Edit page. On the Picture Edit page the user can change the Brightness, Contrast, RGB, Grayscale, Cropping, and Resolution of the image they chose to edit at the Editor page, with various sliders, buttons, and forms.
 * The Left column is Rotation, Cropping, and Resizing. 
 * The Center is the Image Canvas to be adjusted, sent from the Editor Page. Also:
-        1. Apply Edits button here downloads the image canvas
-        2. Upload button uploads the new image to the server file system for overwriting. 
+- Apply Edits button here downloads the image canvas
+- Upload button uploads the new image to the server file system for overwriting. 
 * The Right Column are the Brightness, Contrast, RGB JQuery UI Sliders.
 
     
