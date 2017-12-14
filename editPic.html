@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+   Name: Jake Adamson, Robert Cucchiara, David DaCosta
+   Email: david_dacosta@student.uml.edu, jacob_adamson@student.uml.edu
+   Computer Science Department Student, UMass Lowell
+   Comp.4610, GUI Programming I
+   File:
+   Created: 30-Nov-2017
+   Last updated by DD: 30-Nov-2017, 08:30pm
+  -->
+
+<html lang="en">
+  <head>
+    <title>Portfolio Mate</title>
+      <!--    FITS TO DEVICE WIDTH-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Theme CSS -->
+      <link href="final.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="sliderStyle.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <!-- Body of the site-->
+  <body class="editPicBody" id="editPicBody">
+  
+
+    <div class="jumbotron header" id="header">
+      <h3 class="display-3" > Pic Editor</h3>
+    </div>
+
+    <div class="wrapper wrapRow">
+		  <div id="content">		
+			<div class="container-fluid">		    
+				<div class="row" >
+		<!-- Edit Screen -->
+				<!--<div class="row">-->
+					<div class="col-xs-3">
+						<form id="resoCropRot">
+							<p>
+								Crop<br>
+								<label for="cropWidth">Width</label>
+								<input type="number" name="cropWidth" id="cropWidth">
+								<label for="cropHeight">Height</label>
+								<input type="number" name="cropHeight" id="cropHeight"><br>
+								Begin cropping at:<br>
+								<label for="cropX">X:</label>
+								<input type="number" name="cropX" id="cropX" value="0">
+								<label for="cropY">Y:</label>
+								<input type="number" name="cropY" id="cropY" value="0">
+							</p>
+							<p>
+								Rescale Image <br>
+								<label for="resWidth">Width</label>
+								<input type="number" name="resWidth" id="resWidth">
+								<label for="resHeight">Height</label>
+								<input type="number" name="resHeight" id="resHeight"><br>	
+							</p>
+							<p>
+								Select which to apply first:<br>
+								<label for="resToCrop">Resolution->Crop</label>
+								<input type="radio" name="resAndCrop" value="resToCrop" id="resToCrop" checked="checked">
+								<label for="cropToRes">Crop->Resolution</label>
+								<input type="radio" name="resAndCrop" value="cropToRes" id="cropToRes">
+							</p>
+							<button class="btn btn-primary" type="button" onclick="applyResAndCrop()">Apply Crop and Resolution</button>
+							<br><br>
+						</form>
+					</div>
+				
+				<div class="col-xs-6" id="canvasPicture">
+					<canvas id="editCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+					<img style="display: none;" id="imagePreview" src="">
+						<form style="display: none;" id="upload" action="./imgs/upload.php" method="post" enctype="multipart/form-data">
+							<p style="display: none;">Select image to upload:</p>
+							<input style="display: none;" type="file" name="fileToUpload" id="fileToUpload">
+						</form>
+						<a href="" download>
+						<button class="btn btn-primary">Apply Edits</button></a><br><br>
+						<button class="btn btn-primary" onclick="finishEditing()">Upload</button>
+				</div><!-- onclick="finishEditing()"> type="submit" form="upload"-->
+				
+				<div class="col-xs-3">
+					<form id="imgEditor">
+						<p><br> Brightness <input type="number" name="brightVal" id="brightVal"> </p>
+						<div id="brightness-slider" class="sliders"></div>
+						
+						<p> Contrast <input type="number" name="contrastVal" id="contrastVal"> </p>
+						<div id="contrast-slider" class="sliders"></div>
+
+						<p> Red <input type="number" name="redVal" id="redVal"> </p>
+						<div id="red-slider" class="sliders"></div>
+						
+						<p> Green <input type="number" name="greenVal" id="greenVal"> </p>
+						<div id="green-slider" class="sliders"></div>
+						
+						<p> Blue <input type="number" name="blueVal" id="blueVal"> </p>
+						<div id="blue-slider" class="sliders"></div>
+					
+						<br><button class="btn btn-primary"  id="greyScale" type="button" >Greyscale</button> 
+					</form>
+				<!--</div>-->
+				</div>	
+				</div>
+		  </div>
+		  </div>
+	</div>
+    <div class="footer" id="footer">
+		<p>Created by Jake Adamson, Robert Cucchiara, David DaCosta</p>
+	</div><!-- footer  -->
+		   
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+	<!-- Caman -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+		
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Import JS -->
+	<script type="text/javascript" src="./js/global.js"></script>
+	<script type="text/javascript" src="./js/edit-script.js"></script>
+	
+  </body>
+</html>

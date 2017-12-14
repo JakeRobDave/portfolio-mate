@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+   Name: Jake Adamson, Robert Cucchiara, David DaCosta
+   Email: david_dacosta@student.uml.edu, jacob_adamson@student.uml.edu
+   Computer Science Department Student, UMass Lowell
+   Comp.4610, GUI Programming I
+   File:
+   Created: 30-Nov-2017
+   Last updated by DD: 30-Nov-2017, 08:30pm
+  -->
+
+<html lang="en">
+  <head>
+    <title>Portfolio Mate</title>
+      <!--    FITS TO DEVICE WIDTH-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Theme CSS -->
+      <link rel="stylesheet" type="text/css" href="final.css"/>
+  </head>
+
+  <!-- Body of the site-->
+  <body id="mainBody">
+	<div class=" jumbotron header" id="header">
+      <h1 class="mainHeading">Portfolio Mate</h1>
+    </div>
+	
+	<!--<div class="wrapper wrapRow">-->
+	<div class="wrapper wrapCol">
+		<div id="content">
+		<br>
+		<div class="btn-group btn-group-lg" role="group" aria-label="...">
+		  <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#masterModal">Master</button>
+		  <button type="button" class="btn btn-secondary " onClick="window.location.href = 'landing.html';">Visitor</button>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="masterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Please sign in</h5>
+			  </div>
+			  <div class="modal-body">
+			<form>
+			  <input id="user" type="text" name="user" placeholder="Username">
+			  <input id="pass" type="password" name="pass" placeholder="Password">
+			</form>
+			  </div>
+			  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button id="MasterButton" type="button" class="btn btn-primary">Submit</button>
+			<div class="login-help">
+			  <a href="#">Register</a> - <a href="#">Forgot Password</a>
+			</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer" id="footer">
+		<p>Created by Jake Adamson, Robert Cucchiara, David DaCosta</p>
+	  </div><!-- footer  -->
+	<!--</div>-->
+    </div>
+	
+    <!-- JQUERY CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Import JS -->
+    <script type="text/javascript" src="../js/final/modal.js"></script>
+	<script type="text/javascript" src="../js/final/utility.js"></script>
+	
+  </body>
+</html>
