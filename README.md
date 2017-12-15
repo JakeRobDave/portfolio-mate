@@ -3,6 +3,16 @@ Final Project Gui
 
 # Portfolio Mate Manual 
 
+Github Pages doesn't allow Uploading images to filesystem in the same way UML Weblab does. Check out the code hosted ont his github repository https://github.com/JakeRobDave/portfolio-mate . This github is just for showcasing the code hosted on Weblab. Please Check out our Official Site on All browsers here : http://weblab.cs.uml.edu/~ddacosta/final/main.html 
+
+
+
+
+
+
+
+
+
 Installation/Initialization instructions.
 Portfolio Mate doesn’t need to be installed. Access the web app on any browser with internet at the base-page: http://weblab.cs.uml.edu/~ddacosta/final/main.html. 
 
